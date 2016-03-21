@@ -1,0 +1,65 @@
+{
+	"name": "Second level",
+	"asteroids": [
+		{
+			"asteroidType": "big",
+			"asteroidHealth": 4,
+			"asteroidSpeed": 1.2,
+		},
+		{
+			"asteroidType": "med",
+			"asteroidHealth": 4,
+			"asteroidSpeed": 1.4,
+		}
+	],
+	"waves": [
+		{
+			"waveNumber": 1,
+			"waveSpeedMultiplier": 1.0,
+			"waveAsteroidNumber": 10,
+			"waveAsteroidDelay": 1.2,
+			"waveAsteroids": [
+				{
+					"asteroidType": "big",
+					"asteroidProbabilityWeight": 90,
+				},
+				{
+					"asteroidType": "med",
+					"asteroidProbabilityWeight": 10,
+				}
+			],
+		},
+		{
+			"waveNumber": 2,
+			"waveSpeedMultiplier": 1.2,
+			"waveAsteroidNumber": 20,
+			"waveAsteroidDelay": 0.9,
+			"waveAsteroids": [
+				{
+					"asteroidType": "big",
+					"asteroidProbabilityWeight": 70,
+				},
+				{
+					"asteroidType": "med",
+					"asteroidProbabilityWeight": 30,
+				}
+			],
+		},
+		{
+			"waveNumber": 3,
+			"waveSpeedMultiplier": 1.5,
+			"waveAsteroidNumber": 30,
+			"waveAsteroidDelay": 0.7,
+			"waveAsteroids": [
+				{
+					"asteroidType": "big",
+					"asteroidProbabilityWeight": 50,
+				},
+				{
+					"asteroidType": "med",
+					"asteroidProbabilityWeight": 50,
+				}
+			],
+		}
+	]
+}

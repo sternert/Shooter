@@ -1,0 +1,33 @@
+{
+	"name": "Boss only level 2",
+	"asteroids": [
+		{
+			"asteroidType": "big",
+			"asteroidHealth": 4,
+			"asteroidSpeed": 1.2,
+		}
+	],
+	"waves": [
+		{
+			"waveNumber": 1,
+			"waveSpeedMultiplier": 1.0,
+			"waveAsteroidNumber": 10,
+			"waveAsteroidDelay": 3,
+			"waveAsteroids": [
+				{
+					"asteroidType": "big",
+					"asteroidProbabilityWeight": 70,
+				}
+			],
+		}
+	],
+	"boss": {
+		"bossName": "First boss",
+		"bossVisualType": "EnemyShip",
+		"bossAI": {
+			"type": "MoveTowardsShootWhenAimed",
+			"moveSpeed": 1.5,
+			"aimTime": 0.5
+		}
+	}
+}
