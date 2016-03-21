@@ -1,19 +1,20 @@
 ﻿using System.Collections.Generic;
 using Assets.Scripts.Models;
+using UnityEngine;
 using SimpleJSON;
 
 namespace Assets.Scripts.Util
 {
     public static class LevelParser
     {
-        public static Level GetLevel (string fileName)
+        public static Level GetLevel (TextAsset file)
         {
-            return CreateLevel("Assets/Levels/" + fileName + ".json");
+            return CreateLevel(file);
         }
 
-        private static Level CreateLevel (string filePath)
+        private static Level CreateLevel (TextAsset file)
         {
-            string text = System.IO.File.ReadAllText (filePath);
+            var text = file.text;
 
             var parsed = JSON.Parse (text);
 

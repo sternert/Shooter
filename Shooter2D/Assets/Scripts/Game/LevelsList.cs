@@ -5,9 +5,9 @@ public class LevelsList : MonoBehaviour
 {
     public int nextLevel;
 
-    public List<string> Levels;
+    public List<TextAsset> Levels;
 
-    public string GetNextLevel()
+    public TextAsset GetNextLevel()
     {
         if (nextLevel > Levels.Count - 1)
         {

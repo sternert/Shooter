@@ -15,7 +15,7 @@ namespace Assets.Scripts.Game
         public DataController dataController;
         public LevelsList levelList;
 
-        private string _nextLevel;
+        private TextAsset _nextLevel;
 
         void Start ()
         { 
