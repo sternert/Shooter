@@ -13,21 +13,7 @@ namespace Assets.Scripts.Game
         public LevelState LevelState { get; set; }
         public UiState UiState { get; set; }
         public PlayerState PlayerState { get; set; }
-
-
-        public void DestroyedByBoundary(string tag)
-        {
-            switch (tag)
-            {
-                case "Asteroid":
-                    AsteroidsSurvived++;
-                    AsteroidsDestroyedThisLevel++;
-                    break;
-                case "Shot":
-                    ShotsRemoved++;
-                    break;
-            }
-        }
+        
     }
 
     public enum PlayerState

@@ -15,6 +15,7 @@ namespace Assets.Scripts.Game
                     break;
                 case "Asteroid":
                     dataController.AsteroidsSurvived++;
+                    dataController.AsteroidsDestroyedThisLevel++;
                     break;
             }
         }
